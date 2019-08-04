@@ -1,0 +1,129 @@
+@import 'normalize.css';
+
+@font-face {
+	font-family: Droid Serif;
+	src: url('../fonts/DroidSerif.ttf') format('truetype'),
+		url('../fonts/DroidSerif-Bold.ttf') format('truetype'),
+		url('../fonts/DroidSerif-Italic.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	box-sizing: border-box;
+}
+ul, img {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Droid Serif',  sans-serif;
+}
+.header {
+	min-height: 1vh;
+	background-color: #e4ddcf;
+	max-width: 100%;
+	background-image:  url(../img/bg-duck-1.png), 
+					url(../img/bg-duck.png), 
+					url('../img/bg-duck-elipse.png'),
+					url(../img/bg-duck-1.png);
+	background-repeat: no-repeat;
+	background-position: -200px, 85%, 97% 88%, 116% 52%;
+}
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 43px;
+	padding-bottom: 132px;
+}
+
+.menu {
+	min-height: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 165px;
+}
+.site-logo {
+	width: 30%;
+}
+.navbar ul {
+	list-style-type: none;
+}
+.navbar ul li {
+	display: inline-block;
+	position: relative;
+}
+.navbar li a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	color: #6d6d6d;
+	text-transform: capitalize;
+	padding: 0 25px;
+	margin-bottom: 10px;
+	transition: color .5s;
+}
+.navbar li a:hover {
+	color: #2e4265;
+}
+.navbar li a::after {
+	content: '';
+	width: 0%;
+	height: 3px;
+	background-color: #2e4265;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 0; left: 50%;
+
+	transition: all .5s;
+}
+.navbar li a:hover::after {
+	left: 10%;
+	width: 80%;
+}
+.hero-title {
+	max-width: 508px;
+	color: #2e4265;
+	font-size: 4em;
+	font-weight: 700;
+	line-height: 75px;
+}
+
+.hero-text {
+	display: block;	
+	max-width: 514px;
+	opacity: 0.8;
+	color: #282828;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 26px;
+}
+.hero-button {
+	width: 200px;
+	height: 58px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	border: none;
+	border-radius: 28px;
+	background-color: #d68c6f;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+.hero-button:hover {
+	color: #d68c6f;
+	background-color: #fff;
+}
+
+
+
+
+
