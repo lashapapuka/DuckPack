@@ -11,7 +11,7 @@
 * {
 	box-sizing: border-box;
 }
-ul, img {
+h1, h2, h3, h4, h5, h6, ul, img, li, p {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -30,7 +30,7 @@ body {
 					url('../img/bg-duck-elipse.png'),
 					url(../img/bg-duck-1.png);
 	background-repeat: no-repeat;
-	background-position: -200px, 85%, 97% 88%, 116% 52%;
+	background-position: -200px, 85%, 97% 88%, 1160px 52%;
 }
 .container {
 	max-width: 960px;
@@ -129,6 +129,10 @@ body {
 
 .product {
 	position: relative;
+	background-image: url('../img/bg-duck-egg.png'),
+					url('../img/bg-small-duck.png');
+	background-repeat: no-repeat;
+	background-position: -70px -75px, 1150px 200px;
 }
 .product-header {
 	opacity: 0.04;
@@ -150,22 +154,21 @@ body {
 	font-size: 63px;
 	font-weight: 20px;
 	margin: 0 auto;
+	padding-top: 130px;
 }
 .drowing-line li:nth-child(1) {
 	position: absolute;
 	left: -70px;
-	top: -4px;
 	transform: rotate(-90deg);
 }
 .drowing-line li:nth-child(2) {
 	position: absolute;
-	top: -52px;
+	top: 55%;
 	left: 45%;
 }
 .drowing-line li:nth-child(3) {
 	position: absolute;
 	right: -70px;
-	top: -4px;
 	transform: rotate(-90deg);
 }
 
@@ -225,5 +228,52 @@ body {
 	font-family: "Work Sans";
 	font-size: 26px;
 	font-weight: 300;	
-	line-height: 20px;
+	line-height: 40px;
+}
+.product-img {
+	margin-top: 112px;
+	height: 500px;
+	background-image: url('../img/duck-egg.png'),
+					url('../img/small-duck.png'),
+					url('../img/big-duck.png');
+	background-repeat: no-repeat;
+	background-position: 40px 140px, 300px 45px, 450px 0;
+}
+
+.product-info{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product-info li{
+	position: relative;
+	width: 45%;
+}
+.product-info__bg-title {
+	padding: 0;
+	margin: -7px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.04;
+	color: #2e4265;
+	font-size: 163px;
+}
+.product-info__title {
+	color: #2e4265;
+	font-size: 63px;
+	padding-top: 40px;
+}
+.produnct-info__bg-text {
+	margin-top: 7px;
+}
+.product-info__desc {
+	margin-top: 40px;
+	color: #636363;
+	opacity: 0.9;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 30px;
 }
